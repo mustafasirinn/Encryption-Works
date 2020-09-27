@@ -21,14 +21,14 @@ int main(int argc, string argv[])
 	string text = get_string("plaintext: ");
 
 	for(int i=0, n=strlen(text); i<n; i++){
-        if(text[i]>=65 && text[i]<=90){
-            text[i] -= 65;
-            text[i] = (text[i] + key)%26 + 65;
-        }
-        if (text[i]>=97 && text[i]<=122){
-            text[i] -= 97;
-            text[i] = (text[i] + key)%26 + 97;
-        }    
+        	if(text[i]>=65 && text[i]<=90){
+            		text[i] -= 65;
+            		text[i] = (text[i] + key)%26 + 65;
+        	}
+        	if (text[i]>=97 && text[i]<=122){
+            		text[i] -= 97;
+            		text[i] = (text[i] + key)%26 + 97;
+        	}    
 	}
 
     	printf("ciphertext: %s\n",text);
